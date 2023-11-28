@@ -1,27 +1,45 @@
-# InitialPage
+# Initial Page
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+## Sobre o projeto
 
-## Development server
+Descrição do projeto...
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Funcionalidades
 
-## Code scaffolding
+- Clima - com opção de escolher a cidade;
+- Notas - com opção de adicionar e excluir;
+- Lofi;
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 🖼️ Imagens
 
-## Build
+  <figure align="center">
+    <img alt="alt" src="src">
+    <figcaption>Imagem</figcaption>
+  </figure>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🛠 Ferramentas e tecnologias utilizadas
 
-## Running unit tests
+- [Angular](https://angular.io)
+- [Angular CLI](https://angular.io/cli)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🔥 Como executar o projeto localmente
 
-## Running end-to-end tests
+Para executar o projeto de maneira local, primeiro você precisa ter o NodeJS e o Git instalados na sua máquina. Em seguida, execute os seguintes comandos, um de cada vez em um terminal:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```sh
+git clone https://github.com/alanabacco/initial-page # clona o repositório
+cd initial-page # entra na pasta do projeto
+npm install # instala as dependências do projeto
+ng serve # para rodar o projeto
+```
 
-## Further help
+O projeto estará rodando em [localhost:4200](localhost:4200).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Inspirado em
+
+[App Menu With Lock Screen - Hyperplexed (CodePen)](https://codepen.io/Hyperplexed/pen/vYpXNJd?editors=0010);
+
+---
+
+Desenvolvido por [Alana Bacco](https://github.com/alanabacco). <br />
+[![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/alana-bacco/)](https://www.linkedin.com/in/alana-bacco/)
