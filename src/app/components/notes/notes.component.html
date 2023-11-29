@@ -1,0 +1,34 @@
+<section>
+  <h2>Notas</h2>
+
+  <div class="notes-card">
+    <button class="button add-button" (click)="openDialog()">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="delete icon"
+        fontIcon="add"
+        color="primary"
+      >
+        add
+      </mat-icon>
+    </button>
+
+    <ul class="list">
+      <li *ngFor="let note of notes; let i = index">
+        <div class="list-item-content">
+          <p>{{ note }}</p>
+          <button class="button" (click)="deleteNote(i)">
+            <mat-icon
+              aria-hidden="false"
+              aria-label="delete icon"
+              fontIcon="delete"
+              color="primary"
+            >
+              Excluir
+            </mat-icon>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

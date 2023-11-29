@@ -1,0 +1,19 @@
+// :host {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+// }
+
+.dialog-container {
+  font-family: "Durik", sans-serif;
+}
+
+.form-label,
+.form-field,
+.form-input {
+  color: black;
+}
+
+.form-field {
+  width: 100%;
+}

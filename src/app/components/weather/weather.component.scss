@@ -1,0 +1,12 @@
+.weather-cards-container {
+  display: flex;
+  gap: 16px;
+}
+
+.weather-card {
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background: rgba(217, 217, 217, 0.3);
+  padding: 8px;
+  transition: all 0.1s ease-in-out;
+}

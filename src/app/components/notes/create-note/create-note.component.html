@@ -1,0 +1,21 @@
+<div class="dialog-container">
+  <h1 mat-dialog-title>Criar Nota</h1>
+  <div mat-dialog-content>
+    <mat-form-field class="form-field">
+      <mat-label class="form-label">Nota</mat-label>
+      <textarea
+        class="form-input"
+        matInput
+        [(ngModel)]="newNote"
+        maxlength="100"
+        minlength="3"
+        required
+      >
+      </textarea>
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions align="end">
+    <button mat-stroked-button mat-dialog-close>Cancelar</button>
+    <button mat-stroked-button (click)="createNote()">Criar</button>
+  </div>
+</div>
