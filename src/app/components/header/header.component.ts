@@ -42,7 +42,7 @@ export class HeaderComponent {
 
   getDayOfWeek(): void {
     const options: Intl.DateTimeFormatOptions = {
-      weekday: 'short',
+      weekday: 'long',
     };
     this.dayOfWeek = new Date().toLocaleDateString('pt-BR', options);
   }
@@ -51,7 +51,7 @@ export class HeaderComponent {
     const optionsDate: Intl.DateTimeFormatOptions = {
       day: '2-digit',
       month: '2-digit',
-      year: 'numeric',
+      // year: 'numeric',
     };
     this.formattedDate = new Date().toLocaleDateString('pt-BR', optionsDate);
   }

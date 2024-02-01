@@ -8,7 +8,7 @@
 .div1 {
   display: flex;
   gap: 40px;
-  align-content: center;
+  align-items: center;
 }
 
 .hour {
@@ -18,6 +18,10 @@
 
 .temperature {
   font-size: 3rem;
+}
+
+.date2 {
+  font-size: 2rem;
 }
 
 .button {
