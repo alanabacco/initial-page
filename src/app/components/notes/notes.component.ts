@@ -40,6 +40,7 @@ export class NotesComponent {
         panelClass: 'my-dialog',
       });
     } else {
+      console.log('snackbar');
       this.showSnackbar(
         'Você atingiu o limite de notas. Apague alguma para adicionar outra.'
       );
