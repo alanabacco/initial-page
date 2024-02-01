@@ -5,12 +5,14 @@ import {
   MatDialogActions,
   MatDialogClose,
   MatDialogContent,
+  MatDialogRef,
   MatDialogTitle,
 } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+import { NotesComponent } from '../notes.component';
 
 @Component({
   selector: 'app-create-note',
@@ -25,6 +27,7 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatFormFieldModule,
     FormsModule,
+    MatDialogClose,
   ],
   templateUrl: './create-note.component.html',
   styleUrl: './create-note.component.scss',
@@ -32,13 +35,16 @@ import { FormsModule } from '@angular/forms';
 export class CreateNoteComponent {
   newNote = '';
 
-  constructor(private notesService: NotesService) {}
+  constructor(
+    private notesService: NotesService,
+    public dialog: MatDialogRef<NotesComponent>
+  ) {}
 
   createNote(): void {
     if (this.newNote.trim() !== '') {
       this.notesService.createNote(this.newNote);
       this.newNote = '';
-      // this.router.navigate(['/']);
+      this.dialog.close();
     }
   }
 }

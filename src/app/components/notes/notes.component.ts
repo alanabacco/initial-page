@@ -5,11 +5,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { NotesService } from './notes.service';
 import { MatDialog } from '@angular/material/dialog';
 import { CreateNoteComponent } from './create-note/create-note.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-notes',
   standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
+  imports: [CommonModule, MatButtonModule, MatIconModule, MatTooltipModule],
   templateUrl: './notes.component.html',
   styleUrl: './notes.component.scss',
 })
@@ -30,7 +31,7 @@ export class NotesComponent {
   openDialog() {
     if (this.notes.length < 7) {
       this.dialog.open(CreateNoteComponent, {
-        width: '70%',
+        width: '70%', panelClass: 'my-dialog'
       });
     }
   }

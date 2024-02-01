@@ -1,7 +1,23 @@
 <header class="header">
-  <h1 class="hour">18:02</h1>
-  <div>
-    <p class="temperature">32 °C</p>
-    <p class="date">seg, 23/01/2023</p>
+  <div class="div1">
+    <h1 class="hour">{{ time }}</h1>
+    <div>
+      <p class="temperature">32 °C</p>
+      <p class="date">{{ dayOfWeek }} {{ formattedDate }}</p>
+    </div>
   </div>
+  <button
+    class="button"
+    matTooltip="Configurações"
+    matTooltipPosition="above"
+    matTooltipShowDelay="1000"
+  >
+    <mat-icon
+      class="settings-icon"
+      aria-hidden="false"
+      aria-label="settings icon"
+      fontIcon="settings"
+      color="primary"
+    />
+  </button>
 </header>

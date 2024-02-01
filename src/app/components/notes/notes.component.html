@@ -2,7 +2,13 @@
   <h2>Notas</h2>
 
   <div class="notes-card">
-    <button class="button add-button" (click)="openDialog()">
+    <button
+      class="button add-button"
+      matTooltip="Adicionar nota"
+      matTooltipPosition="above"
+      matTooltipShowDelay="1000"
+      (click)="openDialog()"
+    >
       <mat-icon
         aria-hidden="false"
         aria-label="delete icon"
@@ -17,15 +23,19 @@
       <li *ngFor="let note of notes; let i = index">
         <div class="list-item-content">
           <p>{{ note }}</p>
-          <button class="button" (click)="deleteNote(i)">
+          <button
+            class="button"
+            matTooltip="Excluir nota"
+            matTooltipPosition="above"
+            matTooltipShowDelay="1000"
+            (click)="deleteNote(i)"
+          >
             <mat-icon
               aria-hidden="false"
               aria-label="delete icon"
               fontIcon="delete"
               color="primary"
-            >
-              Excluir
-            </mat-icon>
+            />
           </button>
         </div>
       </li>
