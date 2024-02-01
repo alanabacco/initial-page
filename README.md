@@ -2,29 +2,25 @@
 
 ## Sobre o projeto
 
-Descrição do projeto...
+Initial Page é uma aplicação web que tem como objetivo ser a página inicial do navegador, com funcionalidades como horário, clima, criar anotações e música lofi.
 
-### Funcionalidades
-
-- Clima - com opção de escolher a cidade;
-- Notas - com opção de adicionar e excluir;
-- Lofi;
-
-### 🖼️ Imagens
+<!-- ### 🖼️ Imagens
 
   <figure align="center">
     <img alt="alt" src="src">
     <figcaption>Imagem</figcaption>
-  </figure>
+  </figure> -->
 
 ## 🛠 Ferramentas e tecnologias utilizadas
 
 - [Angular](https://angular.io)
 - [Angular CLI](https://angular.io/cli)
+- [Angular Material](https://material.angular.io/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-## 🔥 Como executar o projeto localmente
+## Como executar o projeto localmente
 
-Para executar o projeto de maneira local, primeiro você precisa ter o NodeJS e o Git instalados na sua máquina. Em seguida, execute os seguintes comandos, um de cada vez em um terminal:
+Para executar o projeto de maneira local, primeiro você precisa ter o NodeJS, o Git e o Angular CLI instalados na sua máquina. Em seguida, execute os seguintes comandos, um de cada vez em um terminal:
 
 ```sh
 git clone https://github.com/alanabacco/initial-page # clona o repositório
@@ -37,7 +33,7 @@ O projeto estará rodando em [localhost:4200](localhost:4200).
 
 ## Inspirado em
 
-[App Menu With Lock Screen - Hyperplexed (CodePen)](https://codepen.io/Hyperplexed/pen/vYpXNJd?editors=0010);
+[App Menu With Lock Screen - Hyperplexed (CodePen)](https://codepen.io/Hyperplexed/pen/vYpXNJd?editors=0010)
 
 ---
 
