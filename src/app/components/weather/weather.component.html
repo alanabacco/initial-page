@@ -2,20 +2,17 @@
   <h2>Clima</h2>
 
   <div class="weather-cards-container">
-    <div class="weather-card">
-      <p>32 °C</p>
-      <p>icon</p>
-      <p>23/01</p>
-    </div>
-    <div class="weather-card">
-      <p>32 °C</p>
-      <p>icon</p>
-      <p>23/01</p>
-    </div>
-    <div class="weather-card">
-      <p>32 °C</p>
-      <p>icon</p>
-      <p>23/01</p>
-    </div>
+    <ul class="weather-list">
+      <li *ngFor="let w of weather; let i = index">
+        <div class="weather-card">
+          <div class="temp-container">
+            <p>{{ w.max }}°</p>
+            <p>{{ w.min }}°</p>
+          </div>
+          <!-- <p>icon</p> -->
+          <p>{{ formatDate(w.data) }}</p>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
