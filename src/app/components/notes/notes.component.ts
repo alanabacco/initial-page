@@ -6,6 +6,7 @@ import { NotesService } from './notes.service';
 import { MatDialog } from '@angular/material/dialog';
 import { CreateNoteComponent } from './create-note/create-note.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-notes',
@@ -17,7 +18,11 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 export class NotesComponent {
   notes: string[] = [];
 
-  constructor(private notesService: NotesService, public dialog: MatDialog) {}
+  constructor(
+    private notesService: NotesService,
+    public dialog: MatDialog,
+    private _snackBar: MatSnackBar
+  ) {}
 
   ngOnInit(): void {
     this.notes = this.notesService.getNotes();
@@ -31,8 +36,20 @@ export class NotesComponent {
   openDialog() {
     if (this.notes.length < 7) {
       this.dialog.open(CreateNoteComponent, {
-        width: '70%', panelClass: 'my-dialog'
+        width: '70%',
+        panelClass: 'my-dialog',
       });
+    } else {
+      console.log('snackbar');
+      this.showSnackbar(
+        'Você atingiu o limite de notas. Apague alguma para adicionar outra.'
+      );
     }
+  }
+
+  private showSnackbar(mensagem: string) {
+    this._snackBar.open(mensagem, '', {
+      duration: 5000,
+    });
   }
 }
