@@ -1,0 +1,15 @@
+.lofi-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.lofi-card {
+  background: rgba(217, 217, 217, 0.3);
+  border: 1px solid #ccc;
+  border-radius: 16px;
+}
