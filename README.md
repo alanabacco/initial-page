@@ -1,6 +1,6 @@
 # Initial Page
 
-## Sobre o projeto
+## 💻 Sobre o projeto
 
 Initial Page é uma aplicação web que tem como objetivo ser a página inicial do navegador, com funcionalidades como horário, anotações, música lofi e clima, usando a api da [BrasilApi](<https://brasilapi.com.br/docs#operation/climapredictionwithoutdays(/cptec/v1/clima/previsao/:cityCode)>) (por enquanto fixo para uma cidade, mas pode haver melhorias).
 
@@ -16,7 +16,7 @@ Initial Page é uma aplicação web que tem como objetivo ser a página inicial 
 - [Angular Material](https://material.angular.io/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## Como executar o projeto localmente
+## 🔥 Como executar o projeto localmente
 
 Para executar o projeto de maneira local, primeiro você precisa ter o NodeJS, o Git e o Angular CLI instalados na sua máquina. Em seguida, execute os seguintes comandos, um de cada vez em um terminal:
 
