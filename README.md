@@ -2,12 +2,12 @@
 
 ## Sobre o projeto
 
-Initial Page é uma aplicação web que tem como objetivo ser a página inicial do navegador, com funcionalidades como horário, anotações, música lofi e clima (por enquanto fixo para uma cidade, mas pode haver melhorias).
+Initial Page é uma aplicação web que tem como objetivo ser a página inicial do navegador, com funcionalidades como horário, anotações, música lofi e clima, usando a api da [BrasilApi](<https://brasilapi.com.br/docs#operation/climapredictionwithoutdays(/cptec/v1/clima/previsao/:cityCode)>) (por enquanto fixo para uma cidade, mas pode haver melhorias).
 
-<!-- <figure align="center">
+<figure align="center">
   <img alt="Gif de apresentação do projeto Initial Page" src="./src/assets/initial-page.gif">
   <figcaption>Gif de apresentação do projeto Initial Page</figcaption>
-</figure> -->
+</figure>
         
 ## 🛠 Ferramentas e tecnologias utilizadas
 
